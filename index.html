@@ -2,21 +2,28 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <!-- Redirecionamento via Meta Tag -->
-    <meta http-equiv="refresh" content="0;url=https://SEU_LINK_DE_AFILIADO_AQUI">
+    <!-- Redirecionamento de segurança via Meta Tag (caso o JS esteja desativado no navegador) -->
+    <meta http-equiv="refresh" content="2;url=https://meli.la/2oHv4Wn">
     <title>Redirecionando...</title>
-    <!-- Redirecionamento via JavaScript -->
-       !function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '918341774492381');
-fbq('track', 'PageView');
-        window.location.href = "https://meli.la/2oHv4Wn";
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '918341774492381');
+        fbq('track', 'PageView');
+
+        // Aguarda 500ms para dar tempo ao Pixel de registrar o evento antes de mudar de página
+        setTimeout(function() {
+            window.location.href = "https://meli.la/2oHv4Wn";
+        }, 500);
     </script>
 </head>
 <body>
